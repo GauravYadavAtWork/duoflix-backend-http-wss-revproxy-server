@@ -1,0 +1,13 @@
+{
+  "name": "duoflix",
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": "dev.gaurav",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "ws": "^8.17.0"
+  }
+}
