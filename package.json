@@ -1,13 +1,22 @@
 {
   "name": "duoflix",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "index.js",
   "author": "dev.gaurav",
   "license": "MIT",
   "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.598.0",
+    "@aws-sdk/s3-request-presigner": "^3.598.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.1",
     "ws": "^8.17.0"
   }
 }
