@@ -8,6 +8,7 @@ const router = express.Router();
 // admin auth is here
 router.post('/admin/login', async (req,res)=>{
     try{
+        console.log("request for admin logging");
         const username = req.body.adminusername;
         const password = req.body.adminpassword;
         

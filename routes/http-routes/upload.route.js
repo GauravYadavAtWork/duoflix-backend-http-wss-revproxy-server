@@ -16,7 +16,7 @@ const s3client = new S3Client({
 
 async function getObjectURL(key){   // generating presigned urls to retrive items from the bucket
     const command = new GetObjectCommand({
-        Bucket:'stream-service-bucket',
+        Bucket:'duoflixmoviestore',
         Key:key
     });
     const url = getSignedUrl(s3client,command);
@@ -25,7 +25,7 @@ async function getObjectURL(key){   // generating presigned urls to retrive item
 
 async function putObjectURL(key,contentType){   // generating presigned urls to put items to the bucket
     const command = new PutObjectCommand({
-        Bucket:'stream-service-bucket',
+        Bucket:'duoflixmoviestore',
         Key:key,
         ContentType:contentType
     });
